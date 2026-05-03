@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Environment files
+.env
+
+# IDE files
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mac and Windows system files
+.DS_Store
+Thumbs.db
+
+# OneDrive artifacts
+desktop.ini
+~$*
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Ignore data files unless you want to include them explicitly
+*.csv
+*.xlsx
+*.db
