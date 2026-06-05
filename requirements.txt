@@ -1,44 +1,5 @@
-# Core data-science
-numpy
-scipy
-pandas
-scikit-learn
-statsmodels
-matplotlib
-seaborn
-plotly
-jupyterlab
-ipython
-ipywidgets
-
-# Finance / trading
-yfinance
-pandas-datareader
-ta
-backtrader
-ccxt
-
-# ML & boosting
-xgboost
-lightgbm
-catboost
-
-# Data I/O & DB
-openpyxl
-xlrd
-sqlalchemy
-psycopg2-binary
-
-# Utilities & web
 requests
-aiohttp
-tqdm
-
-# Dev tools
-black
-isort
-flake8
-mypy
-
-# Optional (may require system binaries or conda):
-# TA-Lib (use wheel or conda on Windows), quantlib, zipline
+python-dotenv
+feedparser
+schedule
+numpy

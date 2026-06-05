@@ -1,36 +1,29 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual environments
+*.pyo
 .venv/
 venv/
-ENV/
+*.egg-info/
 
-# Environment files
+# Environment — NEVER push API keys
 .env
 
-# IDE files
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+# Database — local only
+storage/trading_bot.db
 
-# Mac and Windows system files
+# News cache — regenerated each run
+News/Cache/
+Cleaning/news_*
+
+# Old files to exclude
+Quant/
+Database/
+templates/
+app.py
+test.py
+Token_cal.py
+
+# OS
 .DS_Store
 Thumbs.db
-
-# OneDrive artifacts
-desktop.ini
-~$*
-
-# Logs and databases
-*.log
-*.sqlite3
-
-# Ignore data files unless you want to include them explicitly
-*.csv
-*.xlsx
-*.db

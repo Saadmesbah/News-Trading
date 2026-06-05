@@ -12,7 +12,7 @@ def fetch_news(your_query, x=100):
     
     # Create unique filename with timestamp
     timestamp = datetime.now().strftime("%Y-%m-%d")
-    filename = f'News/cache/news_{timestamp}.txt'
+    filename = f'News/Cache/news_{timestamp}.txt'
     
     with open(filename, 'a', encoding='utf-8') as f:
         #f.write(f"\n{'='*60}\n") 
