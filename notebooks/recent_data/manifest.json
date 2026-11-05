@@ -1,0 +1,14 @@
+{
+  "approved_scope": "Recent audit; descriptive score views; separate P-score/news/TA threshold-hold studies; 21 fixed-24h news/TA weight mixes with earlier-selected thresholds; no leverage or extra fold studies.",
+  "original_rows": 195,
+  "excluded_older_rows": 3,
+  "retained_rows": 192,
+  "first_signal_utc": "2026-09-24 20:51:46.882000+00:00",
+  "last_signal_utc": "2026-10-31 14:49:26.863000+00:00",
+  "original_signal_sha256": "39034784682ae4095c82599cfd45cfb997b7db2fd2b06eac27edd210ce03a5d7",
+  "market_source": "Frozen Binance Spot BTCUSDT hourly candles from the previous study; cropped to the recent interval",
+  "files": {
+    "btc_hourly_recent.csv": "8b362387fe685c09c2da4149547f867b5eb3a905452a88cbafad65a210b53551",
+    "signals_recent.csv": "b3a15d9f7375e01f24b5f1b18db8109c80102db425b47264925cead502db2e17"
+  }
+}

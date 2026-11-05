@@ -1,0 +1,9 @@
+Check,Result
+Original observations,195
+Older observations excluded,3
+Recent observations,192
+First recent timestamp (UTC),2026-09-24 20:51:46.882000+00:00
+Last recent timestamp (UTC),2026-10-31 14:49:26.863000+00:00
+Median collection interval (hours),4.002056666666666
+Largest recent gap (hours),51.916129166666664
+Intervals longer than 12 hours,5

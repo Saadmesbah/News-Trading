@@ -4,6 +4,28 @@ An end-to-end automated trading bot that combines **AI-powered news sentiment an
 
 ---
 
+## Research and backtesting
+
+**[Explore the executed research notebook](notebooks/trading_strategy_research_recent.ipynb)** · [Methods, data and reproduction](notebooks/README_recent.md)
+
+The research studies **192 BTC signal observations from September 24 to October 31, 2026**, with frozen hourly Binance prices. It includes score/price charts, forward-return correlations, separate news and technical score studies, threshold/holding-period comparisons, and **21 news/technical weight combinations**. Exported HOLD labels are collection placeholders; the experiments use continuous scores.
+
+![Earlier/later weight comparison](notebooks/results_recent/recent_weight_comparison.png)
+
+For the fixed 24-hour long/short comparison:
+
+| News / technical weight | Earlier return | Later return | Later trades |
+|---|---:|---:|---:|
+| 5 / 95 (selected on earlier data) | +2.82% | -4.66% | 4 |
+| 70 / 30 (original mix) | +1.36% | +4.57% | 5 |
+| 95 / 5 (highest later return, hindsight) | -1.25% | +6.26% | 6 |
+
+Each mix uses its own threshold selected on earlier data. The earlier winner failed later, and selecting the highest later return would use hindsight. All selected buying-only mixes lost in the later segment. **This small, repeatedly inspected sample does not establish a reliable trading edge or a better replacement for 70/30.**
+
+Returns include modeled fees and slippage, without leverage, funding or liquidation. These research simulations use their own fixed-hold rules; they do not validate the bot's stop-loss/take-profit behavior. The notebook includes the full assumptions and limitations.
+
+---
+
 ## How It Works
 
 ```
@@ -65,8 +87,8 @@ else       → HOLD
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/Saadmesbah/trading-bot.git
-cd trading-bot
+git clone https://github.com/Saadmesbah/News-Trading.git
+cd News-Trading
 ```
 
 **2. Create virtual environment**

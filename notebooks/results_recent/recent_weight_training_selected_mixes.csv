@@ -1,0 +1,3 @@
+mode,news_pct,technical_pct,threshold,earlier_trades,earlier_return_pct,later_trades,later_return_pct,later_drawdown_pct,full_recent_trades,full_recent_return_pct,full_recent_drawdown_pct,later_entry_overlap_with_70_30
+Buying only,100,0,0.15,10,-0.2945672961566559,1,-1.4333186643145202,-2.202983614826226,11,-4.1690140198576975,-6.045458987803354,0.3333333333333333
+Long and short,5,95,0.35,11,2.815078615502542,4,-4.657489282067296,-4.902638678815152,16,1.2459764954132257,-5.3026141061268355,0.0

@@ -1,0 +1,96 @@
+{
+  "approved_stage": 2,
+  "retained_observations": 192,
+  "excluded_older_observations": 3,
+  "first_signal_utc": "2026-09-24 20:51:46.882000+00:00",
+  "last_signal_utc": "2026-10-31 14:49:26.863000+00:00",
+  "score_gaps_over_12h": 5,
+  "last_available_hourly_open_utc": "2026-10-31 14:00:00+00:00",
+  "correlations": [
+    {
+      "horizon_hours": 1,
+      "score": "P-score",
+      "observations": 191,
+      "pearson": -0.056720469800242194,
+      "spearman": -0.054259233585116515
+    },
+    {
+      "horizon_hours": 1,
+      "score": "News",
+      "observations": 191,
+      "pearson": -0.03553051878656316,
+      "spearman": -0.05940358780576816
+    },
+    {
+      "horizon_hours": 1,
+      "score": "Technical",
+      "observations": 191,
+      "pearson": -0.03797205477854532,
+      "spearman": 0.0048455278111958515
+    },
+    {
+      "horizon_hours": 4,
+      "score": "P-score",
+      "observations": 190,
+      "pearson": -0.007416502359461241,
+      "spearman": 0.013213697105851097
+    },
+    {
+      "horizon_hours": 4,
+      "score": "News",
+      "observations": 190,
+      "pearson": -0.015537586083829286,
+      "spearman": 0.005232090984060404
+    },
+    {
+      "horizon_hours": 4,
+      "score": "Technical",
+      "observations": 190,
+      "pearson": 0.023705421508475554,
+      "spearman": -0.02003005777111371
+    },
+    {
+      "horizon_hours": 12,
+      "score": "P-score",
+      "observations": 188,
+      "pearson": 0.10386919459439203,
+      "spearman": 0.13228151065869828
+    },
+    {
+      "horizon_hours": 12,
+      "score": "News",
+      "observations": 188,
+      "pearson": 0.045262193955967325,
+      "spearman": 0.07465868619142489
+    },
+    {
+      "horizon_hours": 12,
+      "score": "Technical",
+      "observations": 188,
+      "pearson": 0.11734303142018485,
+      "spearman": 0.08478514300475458
+    },
+    {
+      "horizon_hours": 24,
+      "score": "P-score",
+      "observations": 185,
+      "pearson": 0.08542414341092934,
+      "spearman": 0.09832483129386727
+    },
+    {
+      "horizon_hours": 24,
+      "score": "News",
+      "observations": 185,
+      "pearson": 0.009331801272272367,
+      "spearman": 0.025863180596754614
+    },
+    {
+      "horizon_hours": 24,
+      "score": "Technical",
+      "observations": 185,
+      "pearson": 0.16682134597775955,
+      "spearman": 0.1504192896951787
+    }
+  ],
+  "limitation": "Descriptive association only; overlapping returns and dependent observations; no threshold fitting or backtest."
+}

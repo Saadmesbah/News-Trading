@@ -1,0 +1,180 @@
+{
+  "approved_analysis": "Recent-only P-score threshold and holding-period comparison",
+  "observations": 192,
+  "earlier_observations": 134,
+  "later_observations": 58,
+  "split_utc": "2026-10-22 02:48:32.320000+00:00",
+  "minimum_earlier_trades": 10,
+  "thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55
+  ],
+  "holding_hours": [
+    1,
+    4,
+    8,
+    12,
+    24,
+    48
+  ],
+  "leverage": 1,
+  "fee_per_side": 0.001,
+  "slippage_per_side": 0.0005,
+  "selected_settings": {
+    "Buying only": {
+      "threshold": 0.1,
+      "holding_hours": 12
+    },
+    "Long and short": {
+      "threshold": 0.25,
+      "holding_hours": 24
+    }
+  },
+  "selected_results": [
+    {
+      "segment": "Earlier",
+      "score_column": "p_score",
+      "mode": "Buying only",
+      "threshold": 0.1,
+      "holding_hours": 12,
+      "trades": 16,
+      "longs": 16,
+      "shorts": 0,
+      "return_pct": -2.875560911,
+      "final_equity": 971.2443908896,
+      "hourly_max_drawdown_pct": -6.9044856618,
+      "win_rate_pct": 50.0,
+      "profit_factor": 0.6982615885,
+      "total_fees": 31.2321539993,
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-22 02:00:00+00:00"
+    },
+    {
+      "segment": "Later",
+      "score_column": "p_score",
+      "mode": "Buying only",
+      "threshold": 0.1,
+      "holding_hours": 12,
+      "trades": 2,
+      "longs": 2,
+      "shorts": 0,
+      "return_pct": -2.5522351932,
+      "final_equity": 974.477648068,
+      "hourly_max_drawdown_pct": -2.5522351932,
+      "win_rate_pct": 0.0,
+      "profit_factor": 0.0,
+      "total_fees": 3.9435772543,
+      "start_time": "2026-10-22 03:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00"
+    },
+    {
+      "segment": "Full recent sample",
+      "score_column": "p_score",
+      "mode": "Buying only",
+      "threshold": 0.1,
+      "holding_hours": 12,
+      "trades": 18,
+      "longs": 18,
+      "shorts": 0,
+      "return_pct": -5.3544050267,
+      "final_equity": 946.4559497333,
+      "hourly_max_drawdown_pct": -6.9044856618,
+      "win_rate_pct": 44.4444444444,
+      "profit_factor": 0.5541274361,
+      "total_fees": 35.0623312876,
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00"
+    },
+    {
+      "segment": "Earlier",
+      "score_column": "p_score",
+      "mode": "Long and short",
+      "threshold": 0.25,
+      "holding_hours": 24,
+      "trades": 10,
+      "longs": 4,
+      "shorts": 6,
+      "return_pct": 1.3571599301,
+      "final_equity": 1013.5715993006,
+      "hourly_max_drawdown_pct": -4.0729022718,
+      "win_rate_pct": 70.0,
+      "profit_factor": 1.3715808866,
+      "total_fees": 20.4357306962,
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-22 02:00:00+00:00"
+    },
+    {
+      "segment": "Later",
+      "score_column": "p_score",
+      "mode": "Long and short",
+      "threshold": 0.25,
+      "holding_hours": 24,
+      "trades": 5,
+      "longs": 0,
+      "shorts": 5,
+      "return_pct": 4.5689026932,
+      "final_equity": 1045.6890269322,
+      "hourly_max_drawdown_pct": -2.4707598633,
+      "win_rate_pct": 60.0,
+      "profit_factor": 5.2686402383,
+      "total_fees": 9.9739854835,
+      "start_time": "2026-10-22 03:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00"
+    },
+    {
+      "segment": "Full recent sample",
+      "score_column": "p_score",
+      "mode": "Long and short",
+      "threshold": 0.25,
+      "holding_hours": 24,
+      "trades": 15,
+      "longs": 4,
+      "shorts": 11,
+      "return_pct": 5.9880699399,
+      "final_equity": 1059.8806993988,
+      "hourly_max_drawdown_pct": -4.6878961664,
+      "win_rate_pct": 66.6666666667,
+      "profit_factor": 2.2640360301,
+      "total_fees": 30.5450791141,
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00"
+    }
+  ],
+  "benchmarks": [
+    {
+      "segment": "Earlier",
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-22 02:00:00+00:00",
+      "cash_return_pct": 0.0,
+      "buy_hold_return_pct": -1.4433717178,
+      "buy_hold_final_equity": 985.566282822
+    },
+    {
+      "segment": "Later",
+      "start_time": "2026-10-22 03:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00",
+      "cash_return_pct": 0.0,
+      "buy_hold_return_pct": -6.7612028633,
+      "buy_hold_final_equity": 932.3879713665
+    },
+    {
+      "segment": "Full recent sample",
+      "start_time": "2026-09-24 21:00:00+00:00",
+      "end_time": "2026-10-31 14:00:00+00:00",
+      "cash_return_pct": 0.0,
+      "buy_hold_return_pct": -8.3687980545,
+      "buy_hold_final_equity": 916.3120194549
+    }
+  ],
+  "checks_passed": 11,
+  "limitations": "Previously inspected data; no pristine holdout. No funding, borrowing, margin, liquidation, stop-loss or take-profit model."
+}

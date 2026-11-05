@@ -1,0 +1,7 @@
+check,result
+21 mixes and 11 thresholds in both modes and three segments,PASS
+Earlier-only threshold selection with 10-trade minimum,PASS
+Correct weighted score drives each trade,PASS
+"Forward entries, fixed exits, non-overlap and segment boundaries",PASS
+No leverage and independent fee/P&L accounting,PASS
+"0/100, 70/30 and 100/0 reconcile to the approved source models",PASS

@@ -1,0 +1,12 @@
+check,result
+Recent data only,PASS
+396 mode/threshold/hold/segment results,PASS
+Strictly forward entries,PASS
+Fixed-duration exits,PASS
+Non-overlapping positions,PASS
+No leverage capital constraint,PASS
+Independent fee and P&L accounting,PASS
+Compounded trade returns,PASS
+Earlier-only selection,PASS
+Segment boundary isolation,PASS
+Drawdown signs,PASS
