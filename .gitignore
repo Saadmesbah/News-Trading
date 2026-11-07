@@ -27,3 +27,5 @@ Token_cal.py
 # OS
 .DS_Store
 Thumbs.db
+# Local cloud exports and reserved evaluation data
+/research_private/

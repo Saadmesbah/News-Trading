@@ -1,0 +1,8 @@
+check,passed
+Input hashes and original192 matching sample verified,True
+Training-only optimal eligible thresholds verified,True
+Training exits precede evaluation entry,True
+Three nonoverlapping evaluation source-row ranges verified,True
+Evaluation trade timing/side/hold/no overlap verified,True
+Independent fee/slippage/equity accounting verified,True
+Hourly drawdowns verified,True

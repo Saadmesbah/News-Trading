@@ -1,0 +1,49 @@
+round,candidate,mode,status,threshold,training_return_pct,training_trades
+Round1,Original70/30,Buying only,No eligible training threshold,,,
+Round1,Original70/30,Long and short,Eligible,0.2,2.475364209226938,10.0
+Round1,Equal70/30,Buying only,No eligible training threshold,,,
+Round1,Equal70/30,Long and short,Eligible,0.15,-2.650676260399054,12.0
+Round1,Bitcoin-only70/30,Buying only,Eligible,0.25,-2.80322491558348,10.0
+Round1,Bitcoin-only70/30,Long and short,Eligible,0.3,2.4969431309072476,11.0
+Round1,Crypto-only70/30,Buying only,Eligible,0.05,-4.885858546890153,11.0
+Round1,Crypto-only70/30,Long and short,Eligible,0.2,-7.809442984565074,12.0
+Round1,Bitcoin80%70/30,Buying only,Eligible,0.05,-2.932291625107064,13.0
+Round1,Bitcoin80%70/30,Long and short,Eligible,0.25,1.9123223215761875,10.0
+Round1,Crypto80%70/30,Buying only,Eligible,0.05,-4.885858546890153,11.0
+Round1,Crypto80%70/30,Long and short,Eligible,0.2,-6.6428946333138565,11.0
+Round1,Original5/95,Buying only,Eligible,0.05,-3.6688795632341065,10.0
+Round1,Original5/95,Long and short,Eligible,0.1,-5.560656511709072,16.0
+Round1,Original95/5,Buying only,Eligible,0.05,-4.361339992819014,10.0
+Round1,Original95/5,Long and short,Eligible,0.3,0.25942549747346444,10.0
+Round2,Original70/30,Buying only,Eligible,0.05,-5.315629886433593,10.0
+Round2,Original70/30,Long and short,Eligible,0.25,1.357159930064955,10.0
+Round2,Equal70/30,Buying only,No eligible training threshold,,,
+Round2,Equal70/30,Long and short,Eligible,0.2,-0.03253022714481135,10.0
+Round2,Bitcoin-only70/30,Buying only,Eligible,0.3,-0.9479131962855325,10.0
+Round2,Bitcoin-only70/30,Long and short,Eligible,0.3,-0.5078998273760682,13.0
+Round2,Crypto-only70/30,Buying only,Eligible,0.05,-6.285063545717129,13.0
+Round2,Crypto-only70/30,Long and short,Eligible,0.3,-5.162636055449255,11.0
+Round2,Bitcoin80%70/30,Buying only,Eligible,0.05,-4.11388056584181,15.0
+Round2,Bitcoin80%70/30,Long and short,Eligible,0.3,-1.266484222600306,13.0
+Round2,Crypto80%70/30,Buying only,Eligible,0.05,-6.285063545717129,13.0
+Round2,Crypto80%70/30,Long and short,Eligible,0.25,-6.689264919698146,12.0
+Round2,Original5/95,Buying only,Eligible,0.15,-1.8389946182670536,11.0
+Round2,Original5/95,Long and short,Eligible,0.35,4.764974504456521,10.0
+Round2,Original95/5,Buying only,Eligible,0.05,-6.305772561045353,11.0
+Round2,Original95/5,Long and short,Eligible,0.3,-1.2470836582205602,14.0
+Round3,Original70/30,Buying only,Eligible,0.05,-6.636194496579484,14.0
+Round3,Original70/30,Long and short,Eligible,0.25,2.263975371569482,11.0
+Round3,Equal70/30,Buying only,Eligible,0.05,-8.378954836946518,12.0
+Round3,Equal70/30,Long and short,Eligible,0.2,0.8618520276530761,11.0
+Round3,Bitcoin-only70/30,Buying only,Eligible,0.35,-2.698940766699398,12.0
+Round3,Bitcoin-only70/30,Long and short,Eligible,0.35,-1.4761939935954205,16.0
+Round3,Crypto-only70/30,Buying only,Eligible,0.05,-7.592107447209651,17.0
+Round3,Crypto-only70/30,Long and short,Eligible,0.3,-4.169561229426022,12.0
+Round3,Bitcoin80%70/30,Buying only,Eligible,0.25,-2.698940766699398,12.0
+Round3,Bitcoin80%70/30,Long and short,Eligible,0.3,-1.2586224566908166,17.0
+Round3,Crypto80%70/30,Buying only,Eligible,0.05,-7.592107447209651,17.0
+Round3,Crypto80%70/30,Long and short,Eligible,0.25,-5.85443869245047,13.0
+Round3,Original5/95,Buying only,Eligible,0.15,-4.107580943277444,14.0
+Round3,Original5/95,Long and short,Eligible,0.35,5.0390255807786,14.0
+Round3,Original95/5,Buying only,Eligible,0.2,-3.60794593517082,11.0
+Round3,Original95/5,Long and short,Eligible,0.3,-0.569026527282368,16.0

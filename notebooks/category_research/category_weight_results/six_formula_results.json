@@ -1,0 +1,240 @@
+{
+  "approved_scope": "Six category formulas;fixed70/30 news/TA;24h;earlier134-selected thresholds;later58 comparison",
+  "newer40_evaluated": false,
+  "input_sha256": {
+    "azure_matching_previous_192.csv": "f5fc7adaf15528c7bac8bb2c5a76be729cf55930e299f00772dd8584ed83500e",
+    "btc_hourly_recent.csv": "8b362387fe685c09c2da4149547f867b5eb3a905452a88cbafad65a210b53551",
+    "signals_recent.csv": "b3a15d9f7375e01f24b5f1b18db8109c80102db425b47264925cead502db2e17",
+    "recent_weight_training_threshold_selections.csv": "b19faa4660cf427782dd07e0e8bb5fe4d2a328fa98116c011ab091f6f488683f",
+    "recent_weight_selected_segment_results.csv": "e5730367b8025167fb15100225c71a27090f4096e4cf553c3245cc16b23c892d"
+  },
+  "formulas": [
+    {
+      "formula": "Original",
+      "score_column": "category_p_0",
+      "bitcoin_score": 0.4,
+      "crypto_score": 0.2,
+      "politics_score": 0.2,
+      "war_macro_score": 0.2
+    },
+    {
+      "formula": "Equal",
+      "score_column": "category_p_1",
+      "bitcoin_score": 0.25,
+      "crypto_score": 0.25,
+      "politics_score": 0.25,
+      "war_macro_score": 0.25
+    },
+    {
+      "formula": "Bitcoin only",
+      "score_column": "category_p_2",
+      "bitcoin_score": 1.0,
+      "crypto_score": 0.0,
+      "politics_score": 0.0,
+      "war_macro_score": 0.0
+    },
+    {
+      "formula": "Crypto only",
+      "score_column": "category_p_3",
+      "bitcoin_score": 0.0,
+      "crypto_score": 1.0,
+      "politics_score": 0.0,
+      "war_macro_score": 0.0
+    },
+    {
+      "formula": "Bitcoin 80%",
+      "score_column": "category_p_4",
+      "bitcoin_score": 0.8,
+      "crypto_score": 0.06666666666666667,
+      "politics_score": 0.06666666666666667,
+      "war_macro_score": 0.06666666666666667
+    },
+    {
+      "formula": "Crypto 80%",
+      "score_column": "category_p_5",
+      "bitcoin_score": 0.06666666666666667,
+      "crypto_score": 0.8,
+      "politics_score": 0.06666666666666667,
+      "war_macro_score": 0.06666666666666667
+    }
+  ],
+  "comparison": [
+    {
+      "formula": "Original",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.05,
+      "earlier_return_pct": -4.4835362921,
+      "earlier_trades": 11,
+      "later_return_pct": -2.9469273542,
+      "later_trades": 3,
+      "later_drawdown_pct": -3.2607617935,
+      "later_win_rate_pct": 0.0,
+      "later_final_equity": 970.5307264581
+    },
+    {
+      "formula": "Original",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.25,
+      "earlier_return_pct": 1.3571599301,
+      "earlier_trades": 10,
+      "later_return_pct": 4.5689026932,
+      "later_trades": 5,
+      "later_drawdown_pct": -2.4707598633,
+      "later_win_rate_pct": 60.0,
+      "later_final_equity": 1045.6890269322
+    },
+    {
+      "formula": "Equal",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.05,
+      "earlier_return_pct": -6.4200876365,
+      "earlier_trades": 10,
+      "later_return_pct": -2.9469273542,
+      "later_trades": 3,
+      "later_drawdown_pct": -3.2607617935,
+      "later_win_rate_pct": 0.0,
+      "later_final_equity": 970.5307264581
+    },
+    {
+      "formula": "Equal",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.2,
+      "earlier_return_pct": -0.0325302271,
+      "earlier_trades": 10,
+      "later_return_pct": 4.5689026932,
+      "later_trades": 5,
+      "later_drawdown_pct": -2.4707598633,
+      "later_win_rate_pct": 60.0,
+      "later_final_equity": 1045.6890269322
+    },
+    {
+      "formula": "Bitcoin only",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.35,
+      "earlier_return_pct": 1.3084980965,
+      "earlier_trades": 11,
+      "later_return_pct": -1.4333186643,
+      "later_trades": 1,
+      "later_drawdown_pct": -2.2029836148,
+      "later_win_rate_pct": 0.0,
+      "later_final_equity": 985.6668133569
+    },
+    {
+      "formula": "Bitcoin only",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.35,
+      "earlier_return_pct": 1.7585349911,
+      "earlier_trades": 14,
+      "later_return_pct": -1.2114382304,
+      "later_trades": 5,
+      "later_drawdown_pct": -2.9841949009,
+      "later_win_rate_pct": 40.0,
+      "later_final_equity": 987.8856176962
+    },
+    {
+      "formula": "Crypto only",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.05,
+      "earlier_return_pct": -5.4614894096,
+      "earlier_trades": 14,
+      "later_return_pct": -2.7723691888,
+      "later_trades": 4,
+      "later_drawdown_pct": -3.2607617935,
+      "later_win_rate_pct": 25.0,
+      "later_final_equity": 972.2763081116
+    },
+    {
+      "formula": "Crypto only",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.3,
+      "earlier_return_pct": -5.1626360554,
+      "earlier_trades": 11,
+      "later_return_pct": 6.618234401,
+      "later_trades": 5,
+      "later_drawdown_pct": -2.124220449,
+      "later_win_rate_pct": 80.0,
+      "later_final_equity": 1066.1823440097
+    },
+    {
+      "formula": "Bitcoin 80%",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.25,
+      "earlier_return_pct": 1.3084980965,
+      "earlier_trades": 11,
+      "later_return_pct": -1.4333186643,
+      "later_trades": 1,
+      "later_drawdown_pct": -2.2029836148,
+      "later_win_rate_pct": 0.0,
+      "later_final_equity": 985.6668133569
+    },
+    {
+      "formula": "Bitcoin 80%",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.3,
+      "earlier_return_pct": -0.358123582,
+      "earlier_trades": 14,
+      "later_return_pct": -1.2114382304,
+      "later_trades": 5,
+      "later_drawdown_pct": -2.9841949009,
+      "later_win_rate_pct": 40.0,
+      "later_final_equity": 987.8856176962
+    },
+    {
+      "formula": "Crypto 80%",
+      "mode": "Buying only",
+      "status": "Eligible",
+      "threshold": 0.05,
+      "earlier_return_pct": -5.4614894096,
+      "earlier_trades": 14,
+      "later_return_pct": -2.9469273542,
+      "later_trades": 3,
+      "later_drawdown_pct": -3.2607617935,
+      "later_win_rate_pct": 0.0,
+      "later_final_equity": 970.5307264581
+    },
+    {
+      "formula": "Crypto 80%",
+      "mode": "Long and short",
+      "status": "Eligible",
+      "threshold": 0.25,
+      "earlier_return_pct": -6.6892649197,
+      "earlier_trades": 12,
+      "later_return_pct": 4.4828677066,
+      "later_trades": 6,
+      "later_drawdown_pct": -2.2852167813,
+      "later_win_rate_pct": 83.3333333333,
+      "later_final_equity": 1044.8286770663
+    }
+  ],
+  "assumptions": {
+    "starting_equity": 1000,
+    "fee_each_side": 0.001,
+    "slippage_each_side": 0.0005,
+    "threshold_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55
+    ],
+    "min_earlier_trades": 10,
+    "holding_hours": 24
+  },
+  "limitation": "Later58 already explored;small trade counts;short borrowing/funding/liquidation excluded"
+}

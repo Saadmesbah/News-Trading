@@ -1,0 +1,7 @@
+check,passed
+Original formulas reproduce stored scores,True
+Earlier-only threshold selection verified,True
+Original fixed24h study reproduced in both modes/periods,True
+"Selected trade timing, eligibility and no overlaps verified",True
+Independent selected-trade costs and equity reconciliation,True
+Hourly drawdowns and starting1000 verified,True

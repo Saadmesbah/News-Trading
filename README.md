@@ -1,28 +1,49 @@
 #  Crypto Sentiment Trading Bot
 
-An end-to-end automated trading bot that combines **AI-powered news sentiment analysis** with **technical analysis** to generate BTC trading signals in real time.
+A BTC signal research and paper-trading prototype combining **AI-powered news sentiment analysis** with **technical analysis**. It collects news, records sentiment and technical scores, generates signals, and supports reproducible historical research.
 
 ---
 
 ## Research and backtesting
 
-**[Explore the executed research notebook](notebooks/trading_strategy_research_recent.ipynb)** · [Methods, data and reproduction](notebooks/README_recent.md)
+**[Research guide and executed notebooks](notebooks/README_recent.md)**
 
-The research studies **192 BTC signal observations from September 24 to October 31, 2026**, with frozen hourly Binance prices. It includes score/price charts, forward-return correlations, separate news and technical score studies, threshold/holding-period comparisons, and **21 news/technical weight combinations**. Exported HOLD labels are collection placeholders; the experiments use continuous scores.
+The project explores whether recorded news sentiment and technical scores can help identify subsequent BTC price movements. The published research uses **192 observations from September 24 to October 31, 2026**, with frozen Binance BTCUSDT hourly prices. Three disconnected June observations are excluded. Exported HOLD labels were collection placeholders; the experiments use continuous scores.
 
-![Earlier/later weight comparison](notebooks/results_recent/recent_weight_comparison.png)
+### Two different sets of weights
 
-For the fixed 24-hour long/short comparison:
+First, category weights combine Bitcoin, crypto, politics and war/macro into a **news score**. Then news and technical scores combine into the **P-score**. The original settings are 40/20/20/20 inside news, followed by 70% news / 30% technical. Research candidates change one of these layers explicitly. The experiments do not establish 70/30 as optimal or change the running bot configuration.
 
-| News / technical weight | Earlier return | Later return | Later trades |
-|---|---:|---:|---:|
-| 5 / 95 (selected on earlier data) | +2.82% | -4.66% | 4 |
-| 70 / 30 (original mix) | +1.36% | +4.57% | 5 |
-| 95 / 5 (highest later return, hindsight) | -1.25% | +6.26% | 6 |
+### What the analyses show
 
-Each mix uses its own threshold selected on earlier data. The earlier winner failed later, and selecting the highest later return would use hindsight. All selected buying-only mixes lost in the later segment. **This small, repeatedly inspected sample does not establish a reliable trading edge or a better replacement for 70/30.**
+- **Category scores have weak descriptive relationships with future returns.** All 16 category/horizon pairs had Pearson and Spearman correlations below 0.10 in absolute magnitude at 1, 4, 12 and 24 hours. Correlation does not measure portfolio profitability. [Category study](notebooks/category_research/news_category_analysis.ipynb)
+- **Higher return in one period did not reliably persist.** Of 21 news/technical mixes, 5/95 led the original earlier segment (+2.82%) but lost later (-4.66%). The mix with the highest later return was not the earlier winner. [Original weight study](notebooks/trading_strategy_research_recent.ipynb)
+- **Equal category weights were positive in all three sequential long/short evaluations**, but only across ten completed trades. That makes them a candidate for further validation, not a proven optimal formula. [Sequential study](notebooks/category_research/sequential_stability_analysis.ipynb)
 
-Returns include modeled fees and slippage, without leverage, funding or liquidation. These research simulations use their own fixed-hold rules; they do not validate the bot's stop-loss/take-profit behavior. The notebook includes the full assumptions and limitations.
+![Three-period evaluation returns](notebooks/category_research/sequential_stability_results/three_period_returns.png)
+
+The table below shows long/short net returns after modeled costs. A threshold is chosen independently for each candidate using only data preceding each evaluation period, then held fixed within that period. Each period starts separately at $1,000.
+
+| Candidate | Oct 13-20 | Oct 20-25 | Oct 25-31 | Trades across periods |
+|---|---:|---:|---:|---:|
+| Original categories, 70/30 news/TA | -2.21% | +0.89% | +4.12% | 3 / 1 / 3 |
+| Equal categories, 70/30 news/TA | +0.90% | +0.89% | +3.69% | 5 / 1 / 4 |
+| Bitcoin-only news, 70/30 | -2.93% | -1.96% | -0.12% | 2 / 3 / 2 |
+| Crypto-only news, 70/30 | -1.89% | +1.05% | +6.00% | 3 / 1 / 3 |
+| Bitcoin-heavy news, 70/30 | -1.76% | -1.27% | -0.12% | 4 / 3 / 2 |
+| Crypto-heavy news, 70/30 | -1.89% | +0.89% | +4.03% | 3 / 1 / 4 |
+| Original categories, 5/95 news/TA | -2.92% | +0.26% | -3.61% | 3 / 4 / 2 |
+| Original categories, 95/5 news/TA | -1.60% | +0.69% | +4.28% | 3 / 2 / 4 |
+
+Dates share boundary days but evaluation windows do not overlap; exact UTC boundaries are in the notebook. Training uses the first 96, 124 and 153 observations, followed by 28, 29 and 39 evaluation observations. The same short history has already been explored repeatedly, and the candidates were chosen after earlier research. These results are historical consistency checks, not independent validation. Do not add the three returns as if they represented a continuously traded account.
+
+### Assumptions and current research direction
+
+The latest trading comparisons use a 24-hour hold, one position at a time, entry at the next hourly open after a signal, 0.10% fee and 0.05% slippage on each side. Thresholds range from 0.05 to 0.55 in 0.05 steps and require at least ten completed training trades. Positions crossing a segment endpoint are excluded. Drawdown is measured at hourly opens.
+
+Long/short results are hypothetical and unleveraged. Funding, borrowing availability/cost, margin, liquidation and intrahour execution are not modeled. Fixed-hold experiments do not validate the bot's stop-loss/take-profit behavior. Previous buying-only results are preserved, but future research focuses on long/short because buying-only performed poorly in this sample.
+
+Forty newer recorded observations remain reserved and have not been evaluated for strategy performance. Their raw data and the credential-containing Azure source notebook are not included in this publication. The next research stage is to freeze selection rules and validate on later data and paper trading. **A reliable live-trading edge has not been established.**
 
 ---
 

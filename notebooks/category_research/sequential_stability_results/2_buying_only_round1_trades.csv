@@ -1,0 +1,2 @@
+source_row,signal_time,entry_time,exit_time,side,p_score,entry_open,exit_open,entry_fill,exit_fill,quantity,initial_equity,ending_equity,net_pnl,net_return,fees,signal_score,score_column
+97,2026-10-13 18:48:37.681874+00:00,2026-10-13 19:00:00+00:00,2026-10-14 19:00:00+00:00,1,0.0866,83170.14,81724.01,83211.72507,81683.14799499999,0.012005531650264573,1000.0,979.6689689286703,-20.331031071329676,-0.02033103107132972,1.9796506175482167,0.5066,candidate_p_2

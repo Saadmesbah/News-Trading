@@ -1,0 +1,8 @@
+# Preserve exact bytes for frozen research inputs verified by SHA-256.
+# These CSVs retain their source line endings on every operating system.
+/notebooks/recent_data/signals_recent.csv -text
+/notebooks/recent_data/btc_hourly_recent.csv -text
+/notebooks/results_recent/recent_score_correlations.csv -text
+/notebooks/results_recent/recent_weight_training_threshold_selections.csv -text
+/notebooks/results_recent/recent_weight_selected_segment_results.csv -text
+/notebooks/category_research/audit_results/azure_matching_previous_192.csv -text

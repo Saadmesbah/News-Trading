@@ -1,0 +1,6 @@
+check,passed
+Only original 192 matching observations included,True
+Input hashes verified,True
+Prior P/news/TA correlations reproduced at all horizons,True
+Independent endpoint/Pearson checks for all 16 combinations,True
+Missing final horizons excluded; expected counts verified,True

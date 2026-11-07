@@ -1,0 +1,7 @@
+formula,score_column,bitcoin_score,crypto_score,politics_score,war_macro_score
+Original,category_p_0,0.4,0.2,0.2,0.2
+Equal,category_p_1,0.25,0.25,0.25,0.25
+Bitcoin only,category_p_2,1.0,0.0,0.0,0.0
+Crypto only,category_p_3,0.0,1.0,0.0,0.0
+Bitcoin 80%,category_p_4,0.8,0.06666666666666667,0.06666666666666667,0.06666666666666667
+Crypto 80%,category_p_5,0.06666666666666667,0.8,0.06666666666666667,0.06666666666666667
